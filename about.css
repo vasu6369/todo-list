@@ -1,0 +1,88 @@
+body {
+    background-image: url('./bk.jpg');
+      background-size: cover;
+      height: 100vh;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+      
+  }
+  
+  .link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .link::before {
+    margin-left: auto;
+  }
+  
+  .link::after, .link::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #0dcaf0;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .link:hover::after, .link:hover::before {
+    width: 100%;
+  }
+
+.bg-card{
+    color: #ded3d3;
+    padding: 20px;
+}
+.tcard{
+    width: 95%;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    box-shadow: 2px 2px 5px 1px rgba(255, 255, 255, 0.947);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .tcard:hover{
+    scale: 1.03;
+    transform: translateY(-6px);
+  }
+  
+.btnb {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color:transparent;
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.8s;
+    box-shadow: 0px 0px 5px 1px #ffffff;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btnb:active {
+    scale: 0.85;
+  }
+  
+  .btnb:hover {
+    background: linear-gradient(to left, rgb(133, 200, 207) 5%, rgba(255, 255, 255, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+  #logo{
+    height: 40px;
+  }
